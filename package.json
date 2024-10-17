@@ -1,0 +1,26 @@
+{
+  "name": "tg-automator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "postinstall": "tsc",
+    "dev": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.7.6",
+    "express": "^4.21.1",
+    "input": "^1.0.1",
+    "telegram": "^2.25.15",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  }
+}
