@@ -12,14 +12,14 @@ const loginUser = async () => {
     connectionRetries: 5,
   });
   await client.start({
-    phoneNumber: async () => await input.text("number ?"),
+    phoneNumber: async () => await input.text("number?"),
     password: async () => await input.text("password?"),
-    phoneCode: async () => await input.text("Code ?"),
+    phoneCode: async () => await input.text("Code?"),
     onError: (err) => console.log(err),
   });
   console.log("You should now be connected.");
   console.log(client.session.save()); // Save this string to avoid logging in again
-  await client.sendMessage("me", { message: "gm sirs" });
+  await client.sendMessage("https://t.me/CTOofMorud", { message: "gm sirs" });
 };
 
 export default loginUser;
